@@ -30,7 +30,7 @@ export default function App() {
     const appID = 133149212;
     const serverSecret = "df8b051c06c9b278947a6c2d6a26b505";
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, randomID(5), randomID(5));
-    const meetingLink = `<span class="math-inline">{window\.location\.protocol\}//</span>{window.location.host}<span class="math-inline">\{window\.location\.pathname\}?roomID\=</span>{roomID}`;
+    const meetingLink = `<span class="math-inline">\{window\.location\.protocol\}//</span>{window.location.host}<span class="math-inline">\{window\.location\.pathname\}?roomID\=</span>{roomID}`;
     // Create instance object from Kit Token.
     const zp = ZegoUIKitPrebuilt.create(kitToken);
 
