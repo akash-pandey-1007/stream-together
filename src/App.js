@@ -1,0 +1,22 @@
+import {Routes, Route} from 'react-router-dom';
+import logo from "./logo.svg";
+import './App.css';
+
+
+import HomePage from "./pages/home";
+import RoomPage from "./pages/room";
+
+
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/room/:roomid" element={<RoomPage />} />
+
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
